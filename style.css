@@ -1,10 +1,9 @@
-/*** Universal ***/
-
+/***universal styles***/
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
@@ -13,7 +12,7 @@
 	--melon: #e8aea2;
 	--lightermelon: #f3d4ce;
 	--transparency: rgba(255, 255, 255, 0.3);
-	--sans: 'Assistant', sans-serif;
+	--sans: Assistant, sans-serif;
 	--mono: 'DM Mono', monospace;
 }
 
@@ -23,8 +22,6 @@ body {
 	background-color: var(--lavender);
 }
 
-/*** main sections ***/
-
 footer,
 header {
 	position: fixed;
@@ -33,7 +30,7 @@ header {
 }
 
 footer {
-	background: linear-gradient(180deg, var(--lavender) 0%, var(--melon) 100%);
+	background: linear-gradient(180deg, var(--lavender) 0 var(--melon) 100%);
 	bottom: 0;
 }
 
@@ -42,19 +39,19 @@ main,
 .border {
 	background-color: var(--transparency);
 	display: inline-block;
-	margin: 10px;
-	padding: 10px;
 	border-radius: 10px;
 	border: 1px var(--spacecadet) solid;
 	width: 40%;
 	box-shadow: 0 5px 3px var(--melon);
+	margin: 10px;
+	padding: 10px;
 }
 
 main {
 	margin-top: 110px;
 }
 
-/*** button ***/
+/***buttons***/
 
 main button {
 	--transparency: var(--melon);
@@ -79,12 +76,12 @@ input {
 	display: block;
 }
 
-/***number area ***/
-
 .result {
 	width: 80%;
 }
-/*** text ***/
+
+/***text***/
+
 h1,
 #number {
 	font-weight: 700;
@@ -104,13 +101,12 @@ h3 {
 	background-color: var(--lightermelon);
 }
 
-/*** icons ***/
-.ph-heart-fill {
+.ph-heart-fill,
+.ph-calculator-fill {
 	vertical-align: text-bottom;
 }
 
 .ph-calculator-fill {
 	font-size: 29px;
 	color: var(--melon);
-	vertical-align: text-bottom;
 }
