@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Unit Converter</title>
+   <link rel="stylesheet" href="./style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;700&family=DM+Mono&family=Fraunces:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+   <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+
+<body>
+   <header>
+      <h1 class='border'><i class="ph-calculator-fill"></i><span id='title'>Basic</span> Unit Converter</h1>
+   </header>
+   <main>
+      <p>Type the <strong>number</strong> you want converted below.</p>
+      <input type="number" id='number' class='border' placeholder='00'>
+      <p><button class='border' onclick='metric()'>Metric</button>
+         <button class='border' onclick='imperial()'>Imperial</button></p>
+      <section class='result'>
+         <h3>Length</h3>
+         <div id="length">
+            <p>XXXXXXXXXXXXX</p>
+         </div>
+
+         <h3>Volume</h3>
+         <div id="volume">
+            <p>XXXXXXXXXXXXX</p>
+         </div>
+
+         <h3>Mass</h3>
+         <div id="mass">
+            <p>XXXXXXXXXXXXX</p>
+         </div>
+      </section>
+
+      <script src="./index.js"></script>
+   </main>
+   <footer>Made with <i class="ph-heart-fill"></i> and tea by @line-em.</footer>
+</body>
+
+</html>
