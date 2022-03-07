@@ -4,9 +4,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 	text-align: center;
 }
 
@@ -17,7 +14,6 @@
 	--lightermelon: #f3d4ce;
 	--transparency: rgba(255, 255, 255, 0.3);
 	--sans: 'Assistant', sans-serif;
-	--serif: 'Fraunces', serif;
 	--mono: 'DM Mono', monospace;
 }
 
@@ -25,9 +21,6 @@ body {
 	font: 400 18px/1.5 var(--sans);
 	color: var(--spacecadet);
 	background-color: var(--lavender);
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 
 /*** main sections ***/
