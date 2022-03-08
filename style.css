@@ -16,6 +16,28 @@
 	--mono: "DM Mono", monospace;
 }
 
+/***
+dimmed palette{
+	--spacecadet: #d0b8db;
+	--lavender: #514166;
+	--melon: #66417a;
+	--lightermelon: #775e8d;
+	--transparency: rgba(255, 255, 255, 0.2);
+	--sans: Assistant, sans-serif;
+	--mono: "DM Mono", monospace;
+}
+
+dark palette {
+	--spacecadet: #d0b8db;
+	--lavender: #201d24;
+	--melon: #4d1215;
+	--lightermelon: #380c16;
+	--transparency: rgba(0, 0, 0, 0.3);
+	--sans: Assistant, sans-serif;
+	--mono: "DM Mono", monospace;
+}
+***/
+
 body {
 	font: 400 19px/1.7 var(--sans);
 	color: var(--spacecadet);
@@ -89,7 +111,9 @@ h1,
 }
 
 h1 {
-	font-size: 24px;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
 }
 
 #number {
@@ -114,4 +138,5 @@ h3:not(:first-child) {
 .ph-calculator-fill {
 	font-size: 29px;
 	color: var(--melon);
+	margin: 0 10px;
 }
