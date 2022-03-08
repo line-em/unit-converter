@@ -13,11 +13,11 @@
 	--lightermelon: #f3d4ce;
 	--transparency: rgba(255, 255, 255, 0.3);
 	--sans: Assistant, sans-serif;
-	--mono: 'DM Mono', monospace;
+	--mono: "DM Mono", monospace;
 }
 
 body {
-	font: 400 18px/1.5 var(--sans);
+	font: 400 19px/1.7 var(--sans);
 	color: var(--spacecadet);
 	background-color: var(--lavender);
 }
@@ -43,17 +43,17 @@ main,
 	border: 1px var(--spacecadet) solid;
 	width: 40%;
 	box-shadow: 0 5px 3px var(--melon);
-	margin: 10px;
-	padding: 10px;
+	margin: 12px;
+	padding: 15px;
 }
 
 main {
-	margin-top: 110px;
+	margin-top: 120px;
 }
 
 /***buttons***/
 
-main button {
+button {
 	--transparency: var(--melon);
 	color: var(--spacecadet);
 	font-weight: 700;
@@ -62,12 +62,12 @@ main button {
 	transition: 300ms ease;
 }
 
-main button:hover {
+button:hover {
 	--transparency: var(--lavender);
 	font-weight: 700;
 }
 
-main button:active {
+button:active {
 	--transparency: var(--lightmelon);
 	color: var(--melon);
 }
@@ -99,6 +99,11 @@ h1 {
 
 h3 {
 	background-color: var(--lightermelon);
+	margin-bottom: 0.5rem;
+}
+
+h3:not(:first-child) {
+	margin-top: 0.5rem;
 }
 
 .ph-heart-fill,
