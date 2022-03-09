@@ -11,33 +11,11 @@
 	--lavender: #e7dada;
 	--melon: #e8aea2;
 	--lightermelon: #f3d4ce;
+	--venetian: #c04848;
 	--transparency: rgba(255, 255, 255, 0.3);
 	--sans: Assistant, sans-serif;
 	--mono: "DM Mono", monospace;
 }
-
-/***
-dimmed palette{
-	--spacecadet: #d0b8db;
-	--lavender: #514166;
-	--melon: #66417a;
-	--lightermelon: #775e8d;
-	--transparency: rgba(255, 255, 255, 0.2);
-	--sans: Assistant, sans-serif;
-	--mono: "DM Mono", monospace;
-}
-
-dark palette {
-	--spacecadet: #d0b8db;
-	--lavender: #201d24;
-	--melon: #4d1215;
-	--lightermelon: #380c16;
-	--transparency: rgba(0, 0, 0, 0.3);
-	--sans: Assistant, sans-serif;
-	--mono: "DM Mono", monospace;
-}
-***/
-
 body {
 	font: 400 19px/1.7 var(--sans);
 	color: var(--spacecadet);
@@ -61,43 +39,63 @@ header {
 section,
 main,
 .border {
-	background-color: var(--transparency);
 	display: inline-block;
-	border-radius: 10px;
-	/*border: 1px var(--spacecadet) solid;
-	box-shadow: 0 5px 3px var(--melon);*/
 	border-radius: 38px;
 	background: linear-gradient(145deg, #f0e9e9, #fae5e1);
 	box-shadow: 10px 10px 30px var(--melon), -10px -10px 30px var(--lavender);
 	border: 1px var(--lavender) solid;
 	width: 65%;
 	margin: 12px;
-	padding: 15px;
+	padding: 12px;
 }
 
-.width {
+.small-width {
 	width: 40%;
+}
+
+.width,
+.large-width {
+	width: 80%;
+}
+
+@media only screen and (min-width: 1150px) {
+	.small-width {
+		width: 40%;
+	}
+
+	.width {
+		width: 40%;
+	}
+
+	.large-width {
+		width: 40%;
+	}
 }
 
 /***buttons***/
 
 button {
-	--transparency: var(--melon);
 	color: var(--spacecadet);
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: 2px;
 	transition: 300ms ease;
+	font-size: 14px;
+	border-radius: 38px;
+	background-color: var(--lightermelon);
+	box-shadow: 0 5px 5px var(--melon), -1px -1px 10px var(--lightermelon);
+	border: 1px var(--lavender) solid;
+	margin: 12px;
+	padding: 15px;
 }
 
 button:hover {
-	--transparency: var(--lavender);
+	color: var(--venetian);
+	background-color: var(--melon);
 	font-weight: 700;
 }
 
 button:active {
-	--transparency: var(--lightmelon);
-	color: var(--melon);
+	box-shadow: inset 10px 10px 20px var(--melon), 5px 5px 20px var(--lightermelon);
 }
 
 input {
@@ -128,7 +126,10 @@ h1 {
 }
 
 h3 {
-	background-color: var(--lightermelon);
+	border-radius: 38px;
+	background: linear-gradient(145deg, var(--melon), #f0c4bb);
+	text-transform: uppercase;
+	color: var(--spacecadet);
 	margin-bottom: 0.5rem;
 }
 
