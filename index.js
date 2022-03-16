@@ -17,7 +17,6 @@ function metric() {
 	//volume.textContent = number + ' gallons is ' + metricVolume.toFixed(3) + ' litres.';
 	//length.textContent = number + ' miles is ' + metricLength.toFixed(3) + ' km.';
 }
-
 function imperial() {
 	title.textContent = "Imperial to Metric";
 	let number = document.getElementById("number").value;
