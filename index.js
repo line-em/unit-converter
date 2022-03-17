@@ -1,11 +1,11 @@
-let length = document.getElementById("length");
-let volume = document.getElementById("volume");
-let mass = document.getElementById("mass");
-let title = document.getElementById("title");
+const length = document.getElementById("length");
+const volume = document.getElementById("volume");
+const mass = document.getElementById("mass");
+const title = document.getElementById("title");
 
 function metric() {
 	title.textContent = "Metric to Imperial";
-	let number = document.getElementById("number").value;
+	const number = document.getElementById("number").value;
 	let metricMass = number / 2.2;
 	let metricVolume = number * 3.785;
 	let metricLength = number * 1.609;
@@ -19,7 +19,7 @@ function metric() {
 }
 function imperial() {
 	title.textContent = "Imperial to Metric";
-	let number = document.getElementById("number").value;
+	const number = document.getElementById("number").value;
 	let imperialMass = number * 2.2;
 	let imperialVolume = number / 3.785;
 	let imperialLength = number / 1.609;
