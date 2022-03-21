@@ -32,6 +32,6 @@ function imperial() {
 	//length.textContent = number + ' km is ' + metricLength.toFixed(3) + ' miles.';
 }
 
-//km = mile, mile = km
-//litres = gallons, gallons = litres
-//kg = pounds, pounds = kg
+//km = mile, mile = km;
+//litres = gallons, gallons = litres;
+//kg = pounds, pounds = kg;
